@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./cuadrado.jpg" rel="icon">
+    <title>Contacto</title>
+    
+</head>
+<body>
+  
+  <div><img src="Rectangular.jpg" alt="Logotipo"></img></div>
+  <header id="navegador">
+    
+    <nav id="nav" class="main-nav" >
+      <div class="nav-links">
+        <ul id="list">
+          <li><a href="./index.html">Principal</a>
+          <li><a href="./bebe.html">Bebes</a>
+          <li><a href="./pequenino.html">Niños</a></li>
+          <li><a href="./pequenina.html">Niñas</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>       
+        </ul>
+      </div>
+    </nav>
+
+    <button id="button-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>  
+    <main>
+
+      <div id="frase">
+        <h3>En sueños nos convertiremos en tu tienda de ropa infantil de referencia, para que tus peques luzcan a la perfección en cualquier evento.</h3>
+        <h3>Nuestra pasión por las últimas tendencias, la satisfacción para nuestros clientes y la confianza de las mejores firmas nacionales de confección infantil.</h3>
+        <h3>Para cualquier duda, reserva o cita contacta con nosotros rellenando este cuestionario.</h3>
+      </div>
+
+      <div class="contacto">
+        <article class="form">
+          <form action="formulario" method="post" id="formulario" name="prueba" novalidate>
+
+            <fieldset>
+              <legend>Campo personal</legend> 
+
+              <div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" id="nombre" autocomplete="on" required autofocus placeholder="Nombre"></input>
+              </div>
+
+              <div>
+                <label for="Apellidos">Apellidos*</label>
+                <input type="text" name="Apellidos" autocomplete="on" placeholder="Apellido" id="apellidos"></input>
+              </div>
+
+              <div>   
+                <label for="telefono">Telefono*</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="611111111" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" required></input>
+              </div>
+
+              <div>  
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" autocomplete="on" placeholder="Email">
+              </div>
+
+              <div>
+                <label for="cliente">Eres cliente nuestro</label><br>
+                <input type="radio" name="cliente" id="cliente" value="si" checked>Si</label><br>
+                <input type="radio" name="cliente" id="paciente" value="no">No</label>  
+              </div>
+
+              <div>
+                <label for="articulo">Artículo del que esta interesado</label>
+            
+                <select name="articulo" id="articulo">
+                  <option value="0">Elija un articulo</option>
+                  <option value="1">Ropa bebe</option>
+                  <option value="2">Ropa niño</option>
+                  <option value="3">Ropa de niña</option>
+                  <option value="4">Abrigos</option>
+                  <option value="5">Vestidos</option>
+                  <option value="6">Pantalones</option>
+                </select>
+              </div>
+            </fieldset>
+              <br>
+            <fieldset>
+                  <legend>Quieres reservar una cita fuera de nuestro horario comercial.</legend>
+              
+                  <div>
+                  <label for="fecha">Fecha</label>
+                  <input type="date" id="fecha" name="fecha" value="2022-01-01" min="2022-01-01" max="2023-12-30">
+              </div>
+
+              <div>
+                  <label for="hora">Hora</label>
+                  <input type="time" id="hora" name="hora" value="09:00" min="09:00" max="21:00"><br></br>
+              </div>
+
+              <div>
+                  <textarea id="comentario" name="comentario" rows="5" cols="19" placeholder="Motivo de su contacto."></textarea>
+              </div> 
+
+              <div>
+                  <input class="enviar" type="submit" id="btn-enviar" value="Enviar" >
+              </div>
+
+            </fieldset>
+          </form> 
+          
+        </article>
+      </div>
+
+          <div class="imagen">
+           <figure >
+            <img src="./tienda-interior.jpg" alt="imagen de nuestra tienda">    
+            <figcaption>Nuestra tienda, siempre preparada para cumplir tus sueños.</figcaption>
+            </figure>
+          </div>
+    </main>
+
+    <footer>
+
+    <div class="escaparate">
+   
+      <div class="icon-phone">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span class="tlf"> Dirección</span>
+        <p>Calle Real 31 Mengibar (Jaén)</p>
+      </div>
+
+      <div class="icon-phone">
+        <i class="fa-solid fa-phone"></i>
+        <span class="tlf">Teléfono</span>
+        <p>651302674</p>
+      </div>
+
+      <div class="icon-phone">
+        <i class="fa-solid fa-shop"></i>
+        <span class="tlf">Horario</span>
+        <p>Lunes a Viernes de 10 a 13.30// 17.30 a 20.30</p>
+        <p>Sabados de 10 a 13.30 </p>
+        <p>Domingo cerrados</p>
+      </div>
+
+      <div class="icon-phone">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span class="tlf"> Síguenos</span>
+        <i class="fa-brands fa-instagram"></i>
+        <div class="enl-faceboox">
+          <a href="https://www.facebook.com/people/Sue%C3%B1os-Meng%C3%ADbar/100084962364241/">Facebook -</a>
+          <a href="https://instagram.com/suenosmengibar?igshid=YmMyMTA2M2Y=">Instagram</a>
+        </div>
+      </div>
+
+    </div>    
+  
+   <div class="frame">
+
+    <span class="tlf">¿Donde nos encontramos?</span>
+    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=calle%20real%2031%20Mengibar,%20jaen+(Sueno)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">GPS devices</a></iframe></div>
+   
+  </div>
+  </footer>
+
+  <script src="./js_Arch/bebe.js"></script>
+  <script src="./js_Arch/ejmfom.js"></script>
+</body>
+
+
+
+
+
+
+    
